@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Poremo | Update Shop Drawing</title>
+	<meta name="description" content="Poremo from Telkom Property"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.red-purple.min.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/dialog-polyfill.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="manifest" href="manifest.json"> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Poremo">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-57x57.png" sizes="57x57">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-60x60.png" sizes="60x60">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-72x72.png" sizes="72x72">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-76x76.png" sizes="76x76">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-120x120.png" sizes="120x120">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-144x144.png" sizes="144x144">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-180x180.png" sizes="180x180">
+	<meta name="msapplication-TileImage" content="assets/images/icons/app-144x144.png">
+	<meta name="msapplication-TileColor" content="#fff">
+	<meta name="theme-color" content="#f5554a"> 
+</head>
+<body>
+	<!--Header Input data-->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	<header class="mdl-layout__header">
+		<div class="mdl-layout__header-row">
+			<a href="shop-drawing.html" title=""><i id="arrow-back" class="material-icons">arrow_back</i></a>
+			<span class="mdl-layout-title" id="title-nav__style">Update Shop Drawing</span>
+		</div>
+	</header><!-- /header -->	
+	<main class="mdl-layout__content">
+		<div class="page-content">
+			<div class="site-content">
+				<div class="container">
+					<div id="input-project" class="mdl-grid site-max-width">
+						<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp page-content">
+							<!-- <div class="mdl-card__title">
+								<h1 class="title-boq mdl-card__title-text">Telkom Project</h1>
+							</div> -->
+							<!-- <div class="input-gambar mdl-card__media">
+								<img class="article-image" src="assets/images/telkom.png" alt="telkom">
+							</div> -->
+							<div class="mdl-grid site-next">
+								<div class="mdl-cell mdl-cell--12-col">
+									<div class="mdl-card__supporting-text">
+										<p>Silahkan isi form dibawah untuk menginput shop drawing baru Anda:</p>
+										
+										<form id="form-shop" class="form-input">
+											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input class="mdl-textfield__input" type="text" name="title" autocomplete="name" id="title">
+												<label class="mdl-textfield__label" for="title">Nama Shop Drawing</label>
+												
+										  	</div>
+											<label for="filed" class="custom-file-upload">
+										     <!--<i class="material-icons">upload</i> --> UPLOAD File
+											</label>
+											<input onchange="uploadFile()" id="filed" type="file" accept="application/pdf, application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" name="filed">
+											
+											<div style="margin:10px auto;text-align:center;">
+												<button class="submit-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
+													Submit 
+												  </button>
+												  <button class="submit-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="reset">
+													  Clear 
+												  </button>
+											</div>
+									        
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="mdl-mini-footer">
+          <div class="footer-container">
+            <div class="mdl-logo">&copy; 2018 Telkom Indonesia. Powered By: <a href="#" target="_blank">Telkom Property</a></div>
+            <ul class="mdl-mini-footer__link-list">
+              <li><a href="#">Privacy & Terms</a></li>
+            </ul>
+          </div>
+        </footer>
+	</main>
+
+	<dialog class="dialog-Edit mdl-dialog">
+		<h4 class="mdl-dialog__title">Register Berhasil</h4>
+		<div class="mdl-dialog__content">
+				
+			<p>Berhasil Edit Shop Drawing</p>		
+		</div>
+		<div class="mdl-dialog__actions">
+			<button type="button" class="ok-Edit mdl-button mdl-button--colored">Ok</button>
+			
+		</div>
+	
+	</dialog>
+
+	<dialog class="dialog-File mdl-dialog">
+		<h4 class="mdl-dialog__title">File Shop Drawing</h4>
+		<div class="mdl-dialog__content">
+				
+			<p>Berhasil Memilih File Shop Drawing</p>		
+		</div>
+		<div class="mdl-dialog__actions">
+			<button type="button" class="ok-File mdl-button mdl-button--colored">Lanjutkan</button>
+			
+		</div>
+	
+	</dialog>
+	</div>
+
+<script src="assets/js/dialog-polyfill.js" type="text/javascript" charset="utf-8"></script>
+<script src="assets/js/material.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/script.js"></script>	
+<script src="assets/js/editShop.js"></script>
+
+</body>
+</html>

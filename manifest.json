@@ -1,0 +1,55 @@
+{
+    "name": "Project Report Mobile by Telpro",
+    "short_name": "Poremo",
+    "icons": [
+    {
+        "src": "assets/images/icons/app-poremos-48x48.png",
+        "type": "image/png",
+        "sizes": "48x48"
+    },
+    {
+        "src": "assets/images/icons/app-poremos-64x64.png",
+        "type": "image/png",
+        "sizes": "64x64"
+    },
+    {
+        "src": "assets/images/icons/app-poremos-96x96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+    },
+    {
+        "src": "assets/images/icons/app-poremos-128x128.png",
+        "type": "image/png",
+        "sizes": "128x128"
+    },
+    {
+        "src": "assets/images/icons/app-poremos-144x144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+    },
+    {
+        "src": "assets/images/icons/app-poremos-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+    },
+    {
+        "src": "assets/images/icons/app-poremos-256x256.png",
+        "type": "image/png",
+        "sizes": "256x256"
+    },
+    {
+        "src": "assets/images/icons/app-poremos-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+    }
+    ],
+    
+    "start_url": "index.html",
+    "scope": ".",
+    "display": "standalone",
+    "orientation": "natural",
+    "background_color": "#ffffff",
+    "theme_color": "#E32423",
+    "description": "A Mobile Web App for Marketing and Project Management PT. Telkom by Telkom Property",
+    "lang": "en-US"
+}

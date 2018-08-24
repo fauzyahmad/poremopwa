@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Poremo | Notes Report</title>
+	<meta name="description" content="Poremo from Telkom Property"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.red-purple.min.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/mdl-ext-eqjs.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="manifest" href="manifest.json"> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Poremo">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-57x57.png" sizes="57x57">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-60x60.png" sizes="60x60">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-72x72.png" sizes="72x72">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-76x76.png" sizes="76x76">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-120x120.png" sizes="120x120">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-144x144.png" sizes="144x144">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-180x180.png" sizes="180x180">
+	<meta name="msapplication-TileImage" content="assets/images/icons/app-144x144.png">
+	<meta name="msapplication-TileColor" content="#fff">
+	<meta name="theme-color" content="#f5554a">
+	
+</head>
+<body>
+	<!--Header Input data-->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	<header class="mdl-layout__header">
+		<div class="mdl-layout__header-row">
+			<a href="update_report.html" title=""><i id="arrow-back" class="material-icons">arrow_back</i></a>
+			<span class="mdl-layout-title" id="title-nav__style">Notes</span>
+			<div class="mdl-layout-spacer"></div>
+			<a href="home.html" id="menu-lower-right"
+			class="mdl-button mdl-js-button mdl-button--icon">
+			<i id="beranda" class="material-icons">home</i>
+			</a>
+			<div class="mdl-tooltip mdl-tooltip--large" for="beranda">
+			    Beranda
+			</div>
+		</div>
+	</header><!-- /header -->	
+	<main class="mdl-layout__content">
+		<div class="page-content">
+			<div class="site-content">
+				<div class="container">
+					<div id="input-project" class="mdl-grid site-max-width">
+						<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp page-content">
+							<div class="mdl-card__title">
+								<h1 class="title-boq mdl-card__title-text">Notes From </h1>
+							</div>
+							<div class="mdl-grid site-next">
+								<div class="mdl-cell mdl-cell--12-col">
+									<div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">
+									  <form id="comment">
+									    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+									      <textarea rows=2 class="mdl-textfield__input" id="content"></textarea>
+									      <label for="comment" class="mdl-textfield__label">Masukkan Notes</label>
+									    </div>
+									    <button id="comment_insert" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+									      <i class="material-icons" role="presentation">check</i><span class="visuallyhidden">add comment</span>
+									    </button>
+									  </form>
+									  <div id="comment_header" class="comment mdl-color-text--grey-700">
+									    
+									  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="mdl-mini-footer">
+          <div class="footer-container">
+            <div class="mdl-logo">&copy; 2018 Telkom Indonesia. Powered By: <a href="#" target="_blank">Telkom Property</a></div>
+            <ul class="mdl-mini-footer__link-list">
+              <li><a href="#">Privacy & Terms</a></li>
+            </ul>
+          </div>
+        </footer>
+	</main>
+	<dialog class="delete_dialog mdl-dialog">
+		<h4 class="mdl-dialog__title">Delete Note</h4>
+		<div class="mdl-dialog__content">
+			
+				<p>Apakah Anda ingin Menghapus Notes Ini?</p>
+
+			
+		</div>
+		<div class="mdl-dialog__actions">
+			<button type="button" class="delete mdl-button mdl-button--colored">Hapus</button>
+			<button type="button" class="mdl-button close_delete">Batal</button>
+		</div>
+	
+	</dialog>
+
+	<dialog class="edit_dialog mdl-dialog">
+		<h4 class="mdl-dialog__title">Edit Note</h4>
+		<div class="mdl-dialog__content">
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			  <textarea rows=2 class="mdl-textfield__input" id="content_edit"></textarea>
+			  <label for="comment_edit" class="mdl-textfield__label">Edit Notes</label>
+			</div>			
+		</div>
+		<div class="mdl-dialog__actions">
+			<button type="button" class="edit mdl-button mdl-button--colored">Perbarui</button>
+			<button type="button" class="mdl-button close_edit">Batal</button>
+		</div>
+	
+	</dialog>
+
+	<dialog class="reply_dialog mdl-dialog">
+		<h4 class="mdl-dialog__title">Balas Note</h4>
+		<div class="mdl-dialog__content">
+			<header class="comment__header">
+			  <i style="font-size:40px;margin-right:8px;" class="material-icons">person</i>
+			  <div class="comment__author">
+			    <strong id="nama_comment"></strong>
+			  </div>
+			</header>
+			<div id="comment-reply_header" class="comment__text">
+			  
+			</div>
+			<br>	
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			  <textarea rows=2 class="mdl-textfield__input" id="content-header_reply"></textarea>
+			  <label for="content-header_reply" class="mdl-textfield__label">Balas Komentar</label> 
+			</div>			
+		</div>
+		<div class="mdl-dialog__actions">
+			<button type="button" class="reply mdl-button mdl-button--colored">Balas</button>
+			<button type="button" class="mdl-button close_reply">Batal</button>
+		</div>
+	
+	</dialog>
+	</div>
+
+	
+
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+<script src="assets/js/material.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+<script src="assets/js/eq.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="assets/js/dialog-polyfill.js" type="text/javascript" charset="utf-8"></script>
+<script src="assets/js/mdl-ext.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="assets/js/promise.js"></script>
+<script src="assets/js/fetch.js"></script>
+<script src="assets/js/idb.js"></script>
+<script src="assets/js/utility.js"></script>
+<script src="assets/js/comment.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/script.js"></script>	
+<!-- <script src="assets/js/fileUpload.js"></script> -->
+<!-- <script src="assets/js/validation.js"></script> -->
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Poremo | Shop Drawing</title>
+		<meta name="description" content="Poremo from Telkom Property"/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.red-purple.min.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/dialog-polyfill.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<link rel="manifest" href="manifest.json">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Poremo">
+		<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-57x57.png" sizes="57x57">
+		<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-60x60.png" sizes="60x60">
+		<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-72x72.png" sizes="72x72">
+		<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-76x76.png" sizes="76x76">
+		<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-120x120.png" sizes="120x120">
+		<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-144x144.png" sizes="144x144">
+		<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-180x180.png" sizes="180x180">
+		<meta name="msapplication-TileImage" content="assets/images/icons/app-144x144.png">
+		<meta name="msapplication-TileColor" content="#fff">
+		<meta name="theme-color" content="#f5554a">
+	</head>
+	<body>
+		<!--Header Input data-->
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+			<header class="mdl-layout__header">
+				<div class="mdl-layout__header-row">
+					<a href="detail_project.html" title=""><i id="arrow-back" class="material-icons">arrow_back</i></a>
+					<span class="mdl-layout-title" id="title-nav__style">Shop Drawing</span>
+					<div class="mdl-layout-spacer"></div>
+					<a href="home.html" id="menu-lower"
+					class="mdl-button mdl-js-button mdl-button--icon">
+					<i style="color: #f44336;" id="beranda" class="material-icons">home</i>
+					</a>
+					<div class="mdl-tooltip mdl-tooltip--large" for="beranda">
+					    Beranda
+					</div>
+					<button id="menu-lower-right"
+					class="mdl-button mdl-js-button mdl-button--icon">
+					<i id="options" class="material-icons">more_vert</i>
+					</button>
+					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+					for="menu-lower-right">
+						<li id="sign-out" class="mdl-menu__item">Sign Out</li>
+						<li id="edit-user" class="mdl-menu__item"><a style="color: rgba(0,0,0,.87);text-decoration: none;"  href="edit_user.html" title="">Edit Akun</a></li>
+						<li class="mdl-menu__item"><a style="color: rgba(0,0,0,.87);text-decoration: none;"  href="detail_project.html" title="">Detail Project</a></li>
+					</ul>
+					<div class="mdl-tooltip mdl-tooltip--large" for="options">
+					    Options
+					</div>
+				</div>
+				</header><!-- /header -->
+				<main class="mdl-layout__content">
+					<div class="page-content">
+						<div class="site-content">
+							<div class="container">
+								<div id="input-project" class="mdl-grid site-max-width">
+									<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp page-content">
+										<div class="mdl-card__title">
+											<h1 id="titleSub" class="title-boq mdl-card__title-text"></h1>
+										</div>
+										
+										<div class="mdl-grid site-next">
+											<div id="create-shop" style="float: right;" class="btn-boq-list">
+												<a href="update_shop.html" type="button" style="margin: 5px 10px;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
+												<i class="material-icons">add_circle</i> Shop D.
+												</a>
+											</div>
+											<!-- <div class="mdl-layout-spacer"></div>
+											<a href="asbuilt.html" id="btn-right-action" style="margin: 5px 5px;width:40px!important;min-width: 40px!important;border-radius: 20%;padding: 0 2px!important;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
+												<i style="margin-top: 6px;" class="material-icons">panorama</i>
+											</a> -->
+											<div class="mdl-cell mdl-cell--12-col">
+												<table class="desc-full mdl-data-table mdl-js-data-table">
+													<tbody id="shop-drawing_detail">
+														<!-- <tr>
+															<td class="mdl-data-table__cell--non-numeric">Denah</td>
+															<td>
+																<a class="alt-btn mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect mdl-button--colored" href="#">Unduh</a>
+																<a class="alt-btn mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect mdl-button--colored" href="#">Delete</a>
+															</td>
+														</tr> -->
+													</tbody>
+												</table>												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <footer class="mdl-mini-footer">
+						<div class="footer-container">
+							<div class="mdl-logo">&copy; 2018 Telkom Indonesia. Design: <a href="https://cognito.id/" target="_blank">Cognito Solutions Indonesia</a></div>
+							<ul class="mdl-mini-footer__link-list">
+								<li><a href="#">Privacy & Terms</a></li>
+							</ul>
+						</div>
+					</footer> -->
+				</main>
+				<dialog class="mdl-dialog">
+					<h4 class="mdl-dialog__title">Delete Shop Drawing</h4>
+					<div class="mdl-dialog__content">
+						
+							<p>Apakah Anda ingin Menghapus Item Shop Drawing Ini?</p>
+
+						
+					</div>
+					<div class="mdl-dialog__actions">
+						<button type="button" class="delete mdl-button mdl-button--colored">Hapus</button>
+						<button type="button" class="mdl-button close">Batal</button>
+					</div>
+				
+				</dialog>
+
+				<dialog class="sign-outModal mdl-dialog">
+					<h4 class="mdl-dialog__title">Sign Out</h4>
+					<div class="mdl-dialog__content">
+						
+							<p>Apakah Anda ingin Sign Out?</p>
+
+						
+					</div>
+					<div class="mdl-dialog__actions">
+						<button type="button" class="sign-outYa mdl-button mdl-button--colored">Ya</button>
+						<button type="button" class="mdl-button close_signOut">Batal</button>
+					</div>
+				
+				</dialog>
+
+			</div>
+			<script defer src="assets/js/material.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="assets/js/dialog-polyfill.js" type="text/javascript" charset="utf-8"></script>
+			<script src="assets/js/promise.js"></script>
+			<script src="assets/js/fetch.js"></script>
+			<script src="assets/js/idb.js"></script>
+			<script src="assets/js/utility.js"></script>
+			<script src="assets/js/shopData.js"></script>
+			<script src="assets/js/app.js"></script>
+		</body>
+	</html>

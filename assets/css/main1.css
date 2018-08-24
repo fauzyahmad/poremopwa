@@ -1,0 +1,359 @@
+body {
+	background: #f3f3f3;
+}
+.mdl-layout__header-row {
+	background: #fff;
+	padding-left: 20px;
+}
+
+.page-content {
+    padding-bottom: 2em;
+}
+
+.footer-container {
+    margin: 0 auto;
+}
+.mdl-card__title-text {
+	margin: 0 auto;
+}
+
+.site-content {
+	margin: 1em auto;
+}
+
+
+.site-max-width {
+	max-width: 900px;
+	margin: auto;
+}
+
+.site-next {
+	max-width: 700px;
+}
+
+.alt-btn {
+	margin: 5px 10px;
+}
+
+.mdl-mini-footer {
+	color: #ffffff;
+    background-color: #565656f5;
+}
+
+/*--------------------- Home Pilih Project ---------------------*/
+header #arrow-back {
+	color: rgb(244,67,54);
+	margin-right: 15px;
+	margin-top: 5px;
+}
+
+header #title-nav__style {
+	color: rgb(244,67,54);
+}
+header #user-nav__style {
+	font-size: 15px;
+	margin: auto 5px;
+	color: rgb(244,67,54);
+}
+header #menu-lower-right i {
+	color: rgb(244,67,54);
+}
+
+.margin-project__option {
+	margin-top: 13px;
+}
+.project-card-image.mdl-card {
+	background: center / cover;
+}
+.project-card-image > .mdl-card__actions {
+	height: 52px;
+	padding: 16px;
+	background: rgba(0, 0, 0, 0.1);
+}
+.project-card-image__filename {
+	color: rgb(244,67,54);
+	text-align: center;
+	margin: 0 auto;
+	justify-content: center;
+	display: flex;
+
+	font-weight: 700;
+}
+#galeri-button {
+	position: fixed;
+	display: block;
+	right: 0;
+	bottom: 0;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	z-index: 900;
+}
+
+.link-project {
+	height: 270px;
+}
+
+.image-project__option {
+	width: 160px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	margin: 0 auto; 
+	padding-top: 20px;
+}
+
+@media screen and (min-width: 720px) {
+	#project-option {
+		margin: 100px auto!important;
+	}
+}
+
+@media screen and (max-width: 839px) and (min-width: 480px) {
+	.non_tel.project-card-image {
+		left: 25%!important;
+	}
+}
+
+@media (max-width: 479px) {
+	.project-card-image {
+		min-height: 100px;
+		height: 160px;
+	}
+	.link-project {
+		height: 160px;
+	}
+	.image-project__option {
+		width: 90px;
+	}
+	.project-card-image.mdl-card--expand {
+		display: none;
+	}
+	#non-telkom {
+		width: 100px;
+	}
+	.mdl-card__actions {
+		margin-top: 4px;
+	}
+	.margin-project__option {
+		margin-top: 13px;
+	}
+}
+
+
+
+
+/*--------------------- Input/Cari Project ---------------------*/
+
+.input-gambar {
+	background-color: transparent;
+}
+
+img.article-image {
+    width: auto;
+    height: auto;
+    justify-content: center;
+	align-items: center;
+	display: flex;
+	margin: 0 auto; 
+}
+
+.form-input .mdl-textfield {
+	width: 100%;
+	display: flex;
+}
+
+#get-location__input, .submit-btn {
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+#pick-image {
+	margin: 0 auto;
+}
+/*--------------------- Deskripsi Project ---------------------*/
+
+.location-desc .mdl-card__title-text, 
+.location-desc .mdl-card__title-text i {
+	font-size: 16px;
+	color: rgb(244,67,54);
+	margin: inherit;
+}
+.desc-full {
+	width: 100%;
+	white-space: normal;
+	margin: 20px auto;
+	border: none;
+}
+
+.fitur-project {
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	padding-bottom: 30px;
+	margin-top: -20px;
+}
+
+.color-icon {
+    font-size: 3.5em;
+    border: 0.2px solid #e2e2e200;
+    border-radius: 30%;
+    padding: 15px;
+    color: #fff;
+    background: rgb(244,67,54);
+    box-shadow: 1px 1px 9px 0px #524848;
+    margin: auto;
+	display: table;
+	margin-bottom: 5px;
+}
+.margin-cell p {
+	font-size: 14px;
+	text-align: center;
+	font-weight: 700;
+	position: absolute;
+	width: 100px;
+	padding-bottom: inherit;
+	margin-bottom: inherit;
+}
+
+.margin-cell {
+	margin-top: 25px;
+	padding-top: 25px;
+	cursor: pointer;
+}
+
+.margin-cell i {
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    overflow: hidden;
+}
+
+.margin-cell i:after {
+	content: "";
+    background: #787b78;
+    display: block;
+    position: absolute;
+    padding-top: 92px;
+    padding-left: 92px;
+    margin-left: -15px!important;
+    margin-top: -8%;
+    opacity: 0;
+    transition: all 0.4s
+}
+
+.margin-cell i:active:after {
+	padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+div.margin-cell i:hover {
+	opacity: 0.8;
+}
+
+@media (max-width: 825px) {
+	.margin-cell p {
+		width: 150px;
+	}
+}
+
+@media (max-width: 667px) {
+	.margin-cell p {
+		width: 120px;
+	}
+}
+
+@media (max-width: 568px) {
+	.margin-cell p {
+		width: 100px;
+	}
+}
+@media (max-width: 480px) {
+	.margin-cell p {
+		width: 90px;
+	}
+}
+@media (max-width: 479px) {
+	.margin-cell p {
+		width: 150px;
+	}
+}
+
+@media (max-width: 411px) {
+	.margin-cell p {
+		width: 150px;
+	}
+}
+
+@media (max-width: 365px) {
+	.desc-full td {
+		padding: 5px 5px;
+	}
+
+	.margin-cell p {
+		width: 125px;
+	}
+
+	.margin-cell i:after {
+		margin-top: -20%;
+	}
+
+}
+
+@media (max-width: 316px) {
+	
+	.margin-cell i:after {
+		margin-top: -28%;
+	}
+
+	.margin-cell p {
+		width: 90px;
+	}
+}
+
+
+/*--------------------- Option Login ---------------------*/
+
+.login-option {
+	min-height: auto;
+}
+.login-option a {
+
+}
+
+.login-option i {
+	margin-top: 20px;
+	color: white;
+	font-size: 10em;
+}
+
+.login-option .login-option__filename {
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	justify-content: center;
+	display: flex;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 839px) and (min-width: 480px) {
+	.telpro-option.login-option {
+		left: 15%!important;
+	}
+}
+
+@media (max-width: 479px) {
+	.login-option .login-option__filename {
+		font-size: 16px;
+	}
+
+	.login-option i {
+		font-size: 5em;
+	}
+}
+
+

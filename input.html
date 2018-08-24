@@ -1,0 +1,249 @@
+<!-- <script type="text/javascript">
+	alert(localStorage.getItem('project_id'))
+</script> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Poremo | Cari Project</title>
+	<meta name="description" content="Poremo from Telkom Property"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.red-purple.min.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/mdl-ext-eqjs.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="manifest" href="manifest.json"> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Poremo">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-57x57.png" sizes="57x57">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-60x60.png" sizes="60x60">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-72x72.png" sizes="72x72">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-76x76.png" sizes="76x76">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-120x120.png" sizes="120x120">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-144x144.png" sizes="144x144">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-180x180.png" sizes="180x180">
+	<meta name="msapplication-TileImage" content="assets/images/icons/app-144x144.png">
+	<meta name="msapplication-TileColor" content="#fff">
+	<meta name="theme-color" content="#f5554a"> 
+</head>
+<body>
+	<!--Header Input data-->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	<header class="mdl-layout__header">
+		<div class="mdl-layout__header-row">
+			<a href="home.html" title=""><i id="arrow-back" class="material-icons">arrow_back</i></a>
+			<span class="mdl-layout-title" id="title-nav__style">Input Project</span>
+		</div>
+	</header><!-- /header -->	
+	<main class="mdl-layout__content">
+		<div class="page-content">
+			<div class="site-content">
+				<div class="container">
+					<div id="input-project" class="mdl-grid site-max-width">
+						<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp page-content">
+							<div class="mdl-card__title">
+								<h1 id="titleTelkom" class="title-boq mdl-card__title-text">Telkom Project</h1>
+								<h1 id="titleTelkomsel" class="title-boq mdl-card__title-text">Telkomsel Project</h1>
+								<h1 id="titleNonTelkom" class="title-boq mdl-card__title-text">Non Telkom Project</h1>
+							</div>
+							<div class="input-gambar mdl-card__media">
+								<img id="imgTelkom" class="article-image" src="assets/images/telkom.png" alt="telkom">
+								<img id="imgTelkomsel" class="article-image" src="assets/images/telkomsel.png" alt="telkom">
+								<img style="width: 175px;" id="imgNonTelkom" class="article-image" src="assets/images/building.png" alt="telkom">
+							</div>
+							<div class="mdl-grid site-next">
+								<div class="mdl-cell mdl-cell--12-col">
+									<div class="mdl-card__supporting-text">
+										<p>Silahkan isi form dibawah atau Upload file Project untuk menginput project baru Anda:</p>
+										<form id="project-upload">
+											<button type="submit" id="upload_boq" style="margin: 5px 10px;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
+												Update
+											</button>
+											<label for="filed" class="custom-file-upload">
+										     <!--<i class="material-icons">upload</i> --> UPLOAD CSV
+											</label>
+											<input id="filed" type="file" accept=".csv" name="filed">
+										</form>
+										<form id="form-input" class="form-input">
+											<!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+												<input class="mdl-textfield__input" type="text" name="name" id="name" required>
+												<label class="mdl-textfield__input" for="name">Nama Project</label>
+											</div> -->
+											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input class="mdl-textfield__input" type="text" name="title" autocomplete="name" id="title">
+												<label class="mdl-textfield__label" for="title">Nama Project</label>
+												<span class="mdl-textfield__error">Nama Project Hanya boleh Huruf dan angka dan tidak lebih dari 30 Karakter</span>
+										  	</div>
+										  	<div id="jenisPekerjaan" style="width: 100%!important;" class="mdlext-selectfield mdlext-js-selectfield mdlext-selectfield--floating-label">
+										  	  <select id="type" name="type" class="mdlext-selectfield__select">
+										  	    <option value=""></option>
+										  	    <option value="S">Pekerjaan Sipil</option>
+										  	    <option value="E">Mekanikal Elektrikal (ME)</option>
+										  	  </select>
+										  	  <label for="type" class="mdlext-selectfield__label">Jenis Pekerjaan</label>
+										  	</div>
+										  	<div id="jenisProgram" style="width: 100%!important;" class="mdlext-selectfield mdlext-js-selectfield mdlext-selectfield--floating-label">
+										  	  <select id="institution_code" name="type" class="mdlext-selectfield__select">
+										  	    <option value=""></option>
+										  	    <option value="1">Program Tahunan/Triwulan</option>
+										  	    <option value="2">Diluar Program Tahunan</option>
+										  	    <option style="display: none" value="3">Telkomsel</option>
+										  	    <option style="display: none" value="4">Non Telkom</option>
+										  	  </select>
+										  	  <label for="institution_code" class="mdlext-selectfield__label">Jenis Program</label>
+										  	</div>
+										  	<button style="vertical-align: middle;" type="button" id="assignment" class="mdlext-js-collapsible mdl-button mdl-js-button mdl-js-ripple-effect">Assignment <i class="add-partner material-icons">add</i></button>
+											<div class="mdlext-collapsible-group">
+										      <select id="partners" class="js-example-basic-multiple" name="partners[]" multiple="multiple">
+										        
+										      </select>
+											</div>
+											<!-- <div id="input-lokasi" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input class="mdl-textfield__input" type="number" name="partners" id="partners" >
+												<label class="mdl-textfield__label" for="partner">Partner</label>
+												<span class="mdl-textfield__error">Lokasi hanya boleh huruf</span>
+										  	</div> -->
+										  	
+										  	<div id="input-lokasi" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input class="mdl-textfield__input" type="text" name="lokasi" id="lokasi">
+												<label class="mdl-textfield__label" for="lokasi">Lokasi</label>
+												<!-- <span class="mdl-textfield__error">Lokasi hanya boleh huruf</span> -->
+										  	</div>
+										  	<button type="button" id="get-location__input" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
+											  Lihat Map
+											</button>
+											<div class="mdl-spinner mdl-js-spinner is-active" id="location-loader"></div>
+
+											<div class="map" id="map1"></div>
+											<button type="button" id="get-address__input" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
+											  Set Alamat
+											</button>
+											<!-- <button type="button" id="allow-location__input" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+												Allow Location
+											</button> -->
+											
+												<div id="id_coord_x" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input value=" " class="mdl-textfield__input" type="text" name="coord_x" id="coord_x">
+											    <label class="mdl-textfield__label" for="coord_x">Koordinat X</label>
+										  	</div>
+										  	<div id="id_coord_y" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input value=" " class="mdl-textfield__input" type="text" name="coord_y" id="coord_y">
+											    <label class="mdl-textfield__label" for="coord_y">Koordinat Y</label>
+										  	</div>
+										  	<div id="id_address" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <textarea class="mdl-textfield__input" type="text" rows="5" name="address" id="address"></textarea>
+											    <label class="mdl-textfield__label" for="address">Alamat</label>
+										  	</div>
+										  	<div id="id_city" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input value=" " class="mdl-textfield__input" type="text" name="city" id="city">
+											    <label class="mdl-textfield__label" for="city">Kota</label>
+										  	</div>
+											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input class="mdl-textfield__input" type="number" name="fiscal_year" id="fiscal_year">
+											    <label class="mdl-textfield__label" for="fiscal_year">Tahun Anggaran</label>
+										  	</div>
+										  	<div id="pilihanKuartal" style="width: 100%!important;" class="mdlext-selectfield mdlext-js-selectfield mdlext-selectfield--floating-label">
+										  	  <select id="quartal" name="quartal" class="mdlext-selectfield__select">
+										  	    <option value=""></option>
+										  	    <option value="1">Q1</option>
+										  	    <option value="2">Q2</option>
+										  	    <option value="3">Q3</option>
+										  	    <option value="4">Q4</option>
+										  	  </select>
+										  	  <label for="type" class="mdlext-selectfield__label">Kuartal</label>
+										  	</div>
+										  	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input class="mdl-textfield__input" type="tel" name="contract_value" id="contract_value">
+											    <label class="mdl-textfield__label" for="contract_value">Contract Value</label>
+												</div>
+												<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input class="mdl-textfield__input" type="number" min="0" step="any" name="duration" id="duration">
+											    <label class="mdl-textfield__label" for="contract_value">Tenggat Waktu</label>
+										  	</div>
+										  	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <textarea class="mdl-textfield__input" type="text" rows="5" name="description" id="description"></textarea>
+											    <label class="mdl-textfield__label" for="description">Description</label>
+										  	</div>
+										  	<!-- <video id="player" autoplay></video> -->
+									        <!-- <canvas id="canvas" width="320px" height="240px"></canvas> -->
+									        <!-- <div class="field"> 
+												<input type="file" accept="image/*" id="files" name="files[]" multiple class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" />
+											  </div>
+											<br><br>
+											<div id="capturedPhoto"></div> <br><br> -->
+											<div style="margin:auto;text-align:center;">
+												<button class="submit-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
+													Submit 
+												  </button>
+												  <button class="submit-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="reset">
+													  Clear 
+												  </button>
+											</div>
+									        
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="mdl-mini-footer">
+          <div class="footer-container">
+            <div class="mdl-logo">&copy; 2018 Telkom Indonesia. Powered By: <a href="#" target="_blank">Telkom Property</a></div>
+            <ul class="mdl-mini-footer__link-list">
+              <li><a href="#">Privacy & Terms</a></li>
+            </ul>
+          </div>
+        </footer>
+	</main>
+
+	<dialog class="dialog-input mdl-dialog">
+		<h4 class="mdl-dialog__title">Input Berhasil</h4>
+		<div class="mdl-dialog__content">
+				
+			<p>Berhasil Menginput Project</p>		
+		</div>
+		<div class="mdl-dialog__actions">
+			<button type="button" class="ok-input mdl-button mdl-button--colored">Ok</button>
+			
+		</div>
+	
+	</dialog>
+
+	<dialog class="dialog-failed mdl-dialog">
+		<h4 class="mdl-dialog__title">Input Failed</h4>
+		<div class="mdl-dialog__content">
+				
+			<p>Semua Data Harus Diisi</p>		
+		</div>
+		<div class="mdl-dialog__actions">
+			<button type="button" class="ok-failed mdl-button mdl-button--colored">Ok</button>
+			
+		</div>
+	
+	</dialog>
+
+	</div>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+<script src="assets/js/material.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;language=in&amp;key=AIzaSyDCNUdU1WdGoMyebHJ-g3qTxwSaaa0ynKI"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+<script src="assets/js/eq.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="assets/js/dialog-polyfill.js" type="text/javascript" charset="utf-8"></script>
+<script src="assets/js/mdl-ext.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="assets/js/getlocation.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/script.js"></script>	
+<!-- <script src="assets/js/fileUpload.js"></script> -->
+<script src="assets/js/validation.js"></script>
+
+</body>
+</html>

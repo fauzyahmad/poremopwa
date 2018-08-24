@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Poremo | Update Partner</title>
+	<meta name="description" content="Poremo from Telkom Property"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.red-purple.min.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/dialog-polyfill.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/mdl-ext-eqjs.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="manifest" href="manifest.json"> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Poremo">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-57x57.png" sizes="57x57">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-60x60.png" sizes="60x60">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-72x72.png" sizes="72x72">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-76x76.png" sizes="76x76">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-120x120.png" sizes="120x120">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-144x144.png" sizes="144x144">
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon-180x180.png" sizes="180x180">
+	<meta name="msapplication-TileImage" content="assets/images/icons/app-144x144.png">
+	<meta name="msapplication-TileColor" content="#fff">
+	<meta name="theme-color" content="#f5554a"> 
+</head>
+<body>
+	<!--Header Input data-->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	<header class="mdl-layout__header">
+		<div class="mdl-layout__header-row">
+			<a href="partners.html" title=""><i id="arrow-back" class="material-icons">arrow_back</i></a>
+			<span class="mdl-layout-title" id="title-nav__style">Edit Partner</span>
+		</div>
+	</header><!-- /header -->	
+	<main class="mdl-layout__content">
+		<div class="page-content">
+			<div class="site-content">
+				<div class="container">
+					<div id="input-project" class="mdl-grid site-max-width">
+						<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp page-content"><br>
+							<h1 id="titleSub" class="title-boq mdl-card__title-text">Edit Partner</h1>
+							
+							<div class="mdl-grid site-next">
+								<div class="mdl-cell mdl-cell--12-col">
+									<div class="mdl-card__supporting-text">
+										<p>Silahkan isi form dibawah untuk mengedit Mitra:</p>
+										<form id="form-edit_partner" class="form-input">
+											
+											<div id="bidPekerjaan" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input class="mdl-textfield__input" type="text" name="work_category" autocomplete="name" id="work_category" >
+												<label class="mdl-textfield__label" for="work_category">Bidang Pekerjaan</label>
+										  	</div>
+										  	<div id="subBidang" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input class="mdl-textfield__input" type="text" name="sub_work_category" autocomplete="name" id="sub_work_category" >
+												<label class="mdl-textfield__label" for="sub_work_category">Sub Bidang</label>
+										  	</div>
+										  	<div id="namaMitra" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input class="mdl-textfield__input" type="text" name="institution" autocomplete="name" id="institution" >
+												<label class="mdl-textfield__label" for="institution">Nama Pemasok</label>
+										  	</div>
+										  	<div id="alamatKantor" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <textarea class="mdl-textfield__input" type="text" rows="5" name="address" id="address"></textarea>
+											    <label class="mdl-textfield__label" for="address">Alamat Kantor</label>
+										  	</div>
+										  	<div id="emailUtama" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input class="mdl-textfield__input" type="text" name="main_email" id="main_email">
+											    <label class="mdl-textfield__label" for="email">Email</label>
+										  	</div>
+										  	<div id="emailLain" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input class="mdl-textfield__input" type="text" name="alternate_email" id="alternate_email">
+											    <label class="mdl-textfield__label" for="email">Email lain</label>
+										  	</div>
+										  	<div id="telpKantor" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input class="mdl-textfield__input" type="tel" name="office_phone1" autocomplete="name" id="office_phone1">
+												<label class="mdl-textfield__label" for="office_phone1">Telepon Kantor</label>
+										  	</div>
+										  	<div id="telpKantor2" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input class="mdl-textfield__input" type="tel" name="office_phone2" autocomplete="name" id="office_phone2">
+												<label class="mdl-textfield__label" for="office_phone2">Telepon Kantor</label>
+										  	</div>
+										  	<div id="contactPerson1" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input class="mdl-textfield__input" type="text" name="contact_person1" autocomplete="name" id="contact_person1">
+												<label class="mdl-textfield__label" for="contact_person1">Contact Person 1</label>
+										  	</div>
+										  	<div id="noTel1" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input class="mdl-textfield__input" type="tel" name="contact_person1_telephone" autocomplete="name" id="contact_person1_telephone" >
+												<label class="mdl-textfield__label" for="contact_person1_telephone">No Telepon 1</label>
+										  	</div>
+										  	<div id="contactPerson2" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input class="mdl-textfield__input" type="text" name="contact_person2" autocomplete="name" id="contact_person2">
+												<label class="mdl-textfield__label" for="contact_person2">Contact Person 2</label>
+										  	</div>
+										  	<div id="noTel2" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											    <input class="mdl-textfield__input" type="tel" name="contact_person2_telephone" autocomplete="name" id="contact_person2_telephone" >
+												<label class="mdl-textfield__label" for="contact_person2_telephone">No Telepon 2</label>
+										  	</div>
+										  	
+										  
+									        <button style="display: table-cell;" class="submit-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
+											  Edit
+											</button>
+											<button style="margin-left: 5px;" class=" mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="reset">
+											  Reset
+											</button>
+											<button style="margin-left: 5px;" onclick="javascript:window.location.href = 'partners.html'; return false;" class=" mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="button">
+											  Cancel
+											</button>
+											<br><br>
+
+											<!-- <a href="index.html">Login Account</a> -->
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <footer class="mdl-mini-footer">
+          <div class="footer-container">
+            <div class="mdl-logo">&copy; 2018 Telkom Indonesia. Design: <a href="https://cognito.id/" target="_blank">Cognito Solutions Indonesia</a></div>
+            <ul class="mdl-mini-footer__link-list">
+              <li><a href="#">Privacy & Terms</a></li>
+            </ul>
+          </div>
+        </footer> -->
+	</main>
+	<dialog class="dialog-update mdl-dialog">
+		<h4 class="mdl-dialog__title">Update Berhasil</h4>
+		<div class="mdl-dialog__content">
+				
+			<p>Berhasil Update Partner</p>		
+		</div>
+		<div class="mdl-dialog__actions">
+			<button type="button" class="ok-update mdl-button mdl-button--colored">Ok</button>
+			
+		</div>
+	
+	</dialog>
+
+	<dialog class="dialog-failed mdl-dialog">
+		<h4 class="mdl-dialog__title">Update Gagal</h4>
+		<div class="mdl-dialog__content">
+				
+			<p>Semua data harus diisi. Kalau tidak ada isinya, isi dengan "N/A"</p>		
+		</div>
+		<div class="mdl-dialog__actions">
+			<button type="button" class="ok-failed mdl-button mdl-button--colored">Ok</button>
+			
+		</div>
+	
+	</dialog>
+	</div>
+	<script src="assets/js/dialog-polyfill.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+	<script src="assets/js/eq.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/material.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/js/mdl-ext.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/promise.js"></script>
+	<script src="assets/js/fetch.js"></script>
+	<script src="assets/js/idb.js"></script>
+	<script src="assets/js/utility.js"></script>
+	<script src="assets/js/update_partner.js"></script>
+	<script src="assets/js/app.js"></script> 
+</body>
+</html>
